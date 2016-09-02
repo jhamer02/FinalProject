@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "PayPalMobile.h"
 #import <Google/Analytics.h>
 @import GoogleMaps;
 
@@ -32,6 +33,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
+    [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
+                                                           PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
+    
+    
     // Override point for customization after application launch.
     [GMSServices provideAPIKey:@"AIzaSyCROMqsGGtCE-LFPAcfYx8zKLYYjKM0isQ"];
     

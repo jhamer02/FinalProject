@@ -72,6 +72,41 @@
                     <view key="view" contentMode="scaleToFill" id="cV6-Nz-G6O">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8fc-d5-VNK">
+                                <rect key="frame" x="0.0" y="485" width="320" height="32"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.29921666060000002" green="0.36239291140000002" blue="0.77476685209999996" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Pagar">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Pagar:" destination="6bZ-Bc-PTb" eventType="touchUpInside" id="wBL-8F-Tn7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Zxd-2V-Gj8">
+                                <rect key="frame" x="0.0" y="447" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.30887678901976429" green="0.57150801437126331" blue="0.68846153846153846" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Dirección de envío">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="DireccionPressed:" destination="6bZ-Bc-PTb" eventType="touchUpInside" id="duA-al-ahA"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="epu-Pf-pVO">
+                                <rect key="frame" x="0.0" y="525" width="320" height="30"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.088981146901923769" green="0.094797286315927057" blue="0.43641826923076921" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Enviar pedido">
+                                    <color key="titleColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="EnvioPressed:" destination="6bZ-Bc-PTb" eventType="touchUpInside" id="UHi-uB-YCR"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="0.33489301282852335" green="1" blue="0.96249341191228621" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" id="AXV-s7-aro"/>

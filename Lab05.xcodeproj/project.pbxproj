@@ -18,6 +18,7 @@
 		E418F0B11D1EF2BE00FBBD04 /* cellHome.m in Sources */ = {isa = PBXBuildFile; fileRef = E418F0AF1D1EF2BE00FBBD04 /* cellHome.m */; };
 		E418F0B21D1EF2BE00FBBD04 /* cellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = E418F0B01D1EF2BE00FBBD04 /* cellHome.xib */; };
 		E44F90661D792D4800896496 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F90651D792D4800896496 /* ShoppingCart.m */; };
+		E44F90681D79509500896496 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44F90671D79509500896496 /* MessageUI.framework */; };
 		E4841CB91D22314200557819 /* jalisco.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB41D22314200557819 /* jalisco.png */; };
 		E4841CBA1D22314200557819 /* nuevoleon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB51D22314200557819 /* nuevoleon.png */; };
 		E4841CBB1D22314200557819 /* oaxaca.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB61D22314200557819 /* oaxaca.png */; };
@@ -81,6 +82,7 @@
 		E418F0B01D1EF2BE00FBBD04 /* cellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellHome.xib; sourceTree = "<group>"; };
 		E44F90641D792D4800896496 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
 		E44F90651D792D4800896496 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
+		E44F90671D79509500896496 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		E4841CB41D22314200557819 /* jalisco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jalisco.png; sourceTree = "<group>"; };
 		E4841CB51D22314200557819 /* nuevoleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevoleon.png; sourceTree = "<group>"; };
 		E4841CB61D22314200557819 /* oaxaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oaxaca.png; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E44F90681D79509500896496 /* MessageUI.framework in Frameworks */,
 				E4CCF4A31D38A95800969202 /* libstdc++.tbd in Frameworks */,
 				E4CCF4AC1D38BB9400969202 /* TwitterCore.framework in Frameworks */,
 				E4CCF4A11D38A93700969202 /* libz.tbd in Frameworks */,
@@ -149,6 +152,7 @@
 		0C044215A064A55D0BA94CF7 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				E44F90671D79509500896496 /* MessageUI.framework */,
 				E4CCF4A21D38A95800969202 /* libstdc++.tbd */,
 				E4CCF4A01D38A93700969202 /* libz.tbd */,
 				8FA67F741F8E1098B380796B /* Pods_Lab05.framework */,

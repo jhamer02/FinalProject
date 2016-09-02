@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "PayPalMobile.h"
+#import <MessageUI/MessageUI.h>
+#import <MessageUI/MFMailComposeViewController.h>
 
-@interface ShoppingCart : UIViewController
+@interface ShoppingCart : UIViewController<MFMailComposeViewControllerDelegate,PayPalPaymentDelegate>
+- (IBAction)Pagar:(id)sender;
+- (IBAction)DireccionPressed:(id)sender;
+- (IBAction)EnvioPressed:(id)sender;
+
 
 @end
