@@ -6,4 +6,7 @@ target 'Lab05' do
 pod 'GoogleMaps'
 pod 'Google/Analytics'
 pod 'Pushwoosh'
+pod 'PayPal-iOS-SDK'
 end
+
+
