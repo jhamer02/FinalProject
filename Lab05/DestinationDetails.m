@@ -138,5 +138,20 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)btnCarritoPressed:(id)sender {
+    [self performSegueWithIdentifier:@"ShoppingCart1" sender:self];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
+    /*if ([segue.destinationViewController isKindOfClass:[Municipios class]]) {
+        Municipios *destination     = [segue destinationViewController];
+        destination.IStateForMun        = self.IState;
+        //        destination.destinationDescription  = self.stDescriptionSelected;
+        //        destination.destinationPhoto        = self.stPhotoSelected;
+        //
+    }*/
+}
+
 @end
 

@@ -17,6 +17,7 @@
 		E418F0A41D1EE9DF00FBBD04 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E418F0A21D1EE9DF00FBBD04 /* LaunchScreen.storyboard */; };
 		E418F0B11D1EF2BE00FBBD04 /* cellHome.m in Sources */ = {isa = PBXBuildFile; fileRef = E418F0AF1D1EF2BE00FBBD04 /* cellHome.m */; };
 		E418F0B21D1EF2BE00FBBD04 /* cellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = E418F0B01D1EF2BE00FBBD04 /* cellHome.xib */; };
+		E44F90661D792D4800896496 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F90651D792D4800896496 /* ShoppingCart.m */; };
 		E4841CB91D22314200557819 /* jalisco.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB41D22314200557819 /* jalisco.png */; };
 		E4841CBA1D22314200557819 /* nuevoleon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB51D22314200557819 /* nuevoleon.png */; };
 		E4841CBB1D22314200557819 /* oaxaca.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB61D22314200557819 /* oaxaca.png */; };
@@ -78,6 +79,8 @@
 		E418F0AE1D1EF2BE00FBBD04 /* cellHome.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellHome.h; sourceTree = "<group>"; };
 		E418F0AF1D1EF2BE00FBBD04 /* cellHome.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellHome.m; sourceTree = "<group>"; };
 		E418F0B01D1EF2BE00FBBD04 /* cellHome.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellHome.xib; sourceTree = "<group>"; };
+		E44F90641D792D4800896496 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
+		E44F90651D792D4800896496 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
 		E4841CB41D22314200557819 /* jalisco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jalisco.png; sourceTree = "<group>"; };
 		E4841CB51D22314200557819 /* nuevoleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevoleon.png; sourceTree = "<group>"; };
 		E4841CB61D22314200557819 /* oaxaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oaxaca.png; sourceTree = "<group>"; };
@@ -229,6 +232,8 @@
 				E4841CED1D23676900557819 /* Municipios.m */,
 				E4841CF81D23A86B00557819 /* DestinationDetails.h */,
 				E4841CF91D23A86B00557819 /* DestinationDetails.m */,
+				E44F90641D792D4800896496 /* ShoppingCart.h */,
+				E44F90651D792D4800896496 /* ShoppingCart.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -459,6 +464,7 @@
 				E418F09F1D1EE9DF00FBBD04 /* Lab05.xcdatamodeld in Sources */,
 				E4841CEE1D23676900557819 /* Municipios.m in Sources */,
 				E418F0B11D1EF2BE00FBBD04 /* cellHome.m in Sources */,
+				E44F90661D792D4800896496 /* ShoppingCart.m in Sources */,
 				E4841CF21D238E7700557819 /* cellMunipios.m in Sources */,
 				E418F0931D1EE9DF00FBBD04 /* main.m in Sources */,
 				E4841CFA1D23A86B00557819 /* DestinationDetails.m in Sources */,

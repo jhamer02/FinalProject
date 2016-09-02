@@ -166,8 +166,16 @@ DGTAuthenticateButton *authButton;
         
         self.tblHome.userInteractionEnabled=true;
         self.tblHome.hidden=false;
+        self.btnCarrito.hidden=false;
+        
     }
      
+}
+
+- (IBAction)btnCarritoPressed:(id)sender {
+    
+    [self performSegueWithIdentifier:@"ShoppingCart" sender:self];
+    
 }
 
 @end

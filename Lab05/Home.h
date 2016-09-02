@@ -13,7 +13,9 @@
 
 @interface Home : UIViewController
 @property (strong, nonatomic) IBOutlet UITableView *tblHome;
+@property (strong, nonatomic) IBOutlet UIButton *btnCarrito;
 
+- (IBAction)btnCarritoPressed:(id)sender;
 
 @end
 

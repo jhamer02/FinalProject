@@ -18,5 +18,6 @@
 @property (strong, nonatomic) IBOutlet UILabel *lblDestination;
 @property (strong, nonatomic) IBOutlet UILabel *lblDestinationDetails;
 
+- (IBAction)btnCarritoPressed:(id)sender;
 
 @end
