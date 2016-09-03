@@ -68,9 +68,9 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"420000.00"];
+    payment.amount = [[NSDecimalNumber alloc] initWithString:@"350.00"];
     payment.currencyCode = @"MXN";
-    payment.shortDescription = @"Auto sedan";
+    payment.shortDescription = @"Despensa";
     //payment.shortDescription = self.productTitle;
     
     // Use the intent property to indicate that this is a "sale" payment,
@@ -163,5 +163,78 @@
 }
 
 
+
+/**********************************************************************************************/
+#pragma mark - Table source and delegate methods
+/**********************************************************************************************/
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
+    return 1;
+}
+//-------------------------------------------------------------------------------
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    NSUInteger arrayLength = [maProductTitle count];
+    return arrayLength;
+    
+    //return 5;
+}
+//-------------------------------------------------------------------------------
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return 190;
+}
+//-------------------------------------------------------------------------------
+//-(void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
+//    //1. Setup the CATransform3D structure
+//    CATransform3D rotation;
+//    rotation = CATransform3DMakeRotation( (90.0*M_PI)/180, 0.0, 0.7, 0.4);
+//    rotation.m34 = 1.0/ -600;
+//
+//    //2. Define the initial state (Before the animation)
+//    cell.layer.shadowColor = [[UIColor blackColor]CGColor];
+//    cell.layer.shadowOffset = CGSizeMake(10, 10);
+//    cell.alpha = 0;
+//
+//    cell.layer.transform = rotation;
+//    cell.layer.anchorPoint = CGPointMake(0, 0.5);
+//
+//    //3. Define the final state (After the animation) and commit the animation
+//    [UIView beginAnimations:@"rotation" context:NULL];
+//    [UIView setAnimationDuration:0.4];
+//    cell.layer.transform = CATransform3DIdentity;
+//    cell.alpha = 1;
+//    cell.layer.shadowOffset = CGSizeMake(0, 0);
+//
+//    //Reassure that cell its in its place (WaGo)
+//    cell.frame = CGRectMake(0, cell.frame.origin.y, cell.frame.size.width, cell.frame.size.height);
+//    [UIView commitAnimations];
+//}
+//-------------------------------------------------------------------------------
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    //Initialize cells
+    cellHome *cell = (cellHome *)[tableView dequeueReusableCellWithIdentifier:@"cellHome"];
+    
+    
+    if (cell == nil) {
+        [tableView registerNib:[UINib nibWithNibName:@"cellHome" bundle:nil] forCellReuseIdentifier:@"cellHome"];
+        cell = [tableView dequeueReusableCellWithIdentifier:@"cellHome"];
+    }
+    //Fill cell with info from arrays
+    //cell.lblDestinationTitle.text   = self.destinationTitles[1][indexPath.row];
+    cell.lblDestinationTitle.text   = maProductTitle[indexPath.row];
+    cell.ldlDescription.text        = maProductPrice[indexPath.row];
+    cell.imgDestination.image       = [UIImage imageNamed:maProductImg[indexPath.row]];
+    
+    return cell;
+}
+//-------------------------------------------------------------------------------
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    //    self.stTitleSelected        = self.destinationTitles[indexPath.row];
+    //    self.stDescriptionSelected  = self.destinationDescriptions[indexPath.row];
+    //    self.stPhotoSelected        = self.destinationPhotos[indexPath.row];
+    //self.IState = indexPath.row;
+    
+    
+    
+    //[self performSegueWithIdentifier:@"Municipios" sender:self];
+}
 
 @end

@@ -10,6 +10,8 @@
 #import "PayPalMobile.h"
 #import <MessageUI/MessageUI.h>
 #import <MessageUI/MFMailComposeViewController.h>
+#import "cellHome.h"
+#import "Declarations.h"
 
 @interface ShoppingCart : UIViewController<MFMailComposeViewControllerDelegate,PayPalPaymentDelegate>
 - (IBAction)Pagar:(id)sender;
