@@ -19,6 +19,9 @@
 		E418F0B21D1EF2BE00FBBD04 /* cellHome.xib in Resources */ = {isa = PBXBuildFile; fileRef = E418F0B01D1EF2BE00FBBD04 /* cellHome.xib */; };
 		E44F90661D792D4800896496 /* ShoppingCart.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F90651D792D4800896496 /* ShoppingCart.m */; };
 		E44F90681D79509500896496 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E44F90671D79509500896496 /* MessageUI.framework */; };
+		E44F906B1D7A45C400896496 /* Declarations.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F906A1D7A45C400896496 /* Declarations.m */; };
+		E44F90741D7A7B0000896496 /* cellProducts.m in Sources */ = {isa = PBXBuildFile; fileRef = E44F90721D7A7B0000896496 /* cellProducts.m */; };
+		E44F90751D7A7B0000896496 /* cellProducts.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44F90731D7A7B0000896496 /* cellProducts.xib */; };
 		E4841CB91D22314200557819 /* jalisco.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB41D22314200557819 /* jalisco.png */; };
 		E4841CBA1D22314200557819 /* nuevoleon.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB51D22314200557819 /* nuevoleon.png */; };
 		E4841CBB1D22314200557819 /* oaxaca.png in Resources */ = {isa = PBXBuildFile; fileRef = E4841CB61D22314200557819 /* oaxaca.png */; };
@@ -83,6 +86,11 @@
 		E44F90641D792D4800896496 /* ShoppingCart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShoppingCart.h; sourceTree = "<group>"; };
 		E44F90651D792D4800896496 /* ShoppingCart.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShoppingCart.m; sourceTree = "<group>"; };
 		E44F90671D79509500896496 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		E44F90691D7A45C400896496 /* Declarations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Declarations.h; sourceTree = "<group>"; };
+		E44F906A1D7A45C400896496 /* Declarations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Declarations.m; sourceTree = "<group>"; };
+		E44F90711D7A7B0000896496 /* cellProducts.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cellProducts.h; sourceTree = "<group>"; };
+		E44F90721D7A7B0000896496 /* cellProducts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cellProducts.m; sourceTree = "<group>"; };
+		E44F90731D7A7B0000896496 /* cellProducts.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = cellProducts.xib; sourceTree = "<group>"; };
 		E4841CB41D22314200557819 /* jalisco.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jalisco.png; sourceTree = "<group>"; };
 		E4841CB51D22314200557819 /* nuevoleon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = nuevoleon.png; sourceTree = "<group>"; };
 		E4841CB61D22314200557819 /* oaxaca.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = oaxaca.png; sourceTree = "<group>"; };
@@ -223,6 +231,8 @@
 			children = (
 				E418F0941D1EE9DF00FBBD04 /* AppDelegate.h */,
 				E418F0951D1EE9DF00FBBD04 /* AppDelegate.m */,
+				E44F90691D7A45C400896496 /* Declarations.h */,
+				E44F906A1D7A45C400896496 /* Declarations.m */,
 			);
 			name = Main;
 			sourceTree = "<group>";
@@ -251,6 +261,9 @@
 				E4841CEF1D238E7700557819 /* cellMunipios.h */,
 				E4841CF01D238E7700557819 /* cellMunipios.m */,
 				E4841CF11D238E7700557819 /* cellMunipios.xib */,
+				E44F90711D7A7B0000896496 /* cellProducts.h */,
+				E44F90721D7A7B0000896496 /* cellProducts.m */,
+				E44F90731D7A7B0000896496 /* cellProducts.xib */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -381,6 +394,7 @@
 				E4841CE61D235CB000557819 /* qr_tulum.jpg in Resources */,
 				E4841CD71D235CB000557819 /* jal_tlaquepaque.jpg in Resources */,
 				E4841CD81D235CB000557819 /* jal_tonala.jpg in Resources */,
+				E44F90751D7A7B0000896496 /* cellProducts.xib in Resources */,
 				E418F09C1D1EE9DF00FBBD04 /* Main.storyboard in Resources */,
 				E4841CE91D235CB000557819 /* slp_sanluis.jpg in Resources */,
 				E4841CDA1D235CB000557819 /* nvo_monterrey.jpg in Resources */,
@@ -467,7 +481,9 @@
 				E418F0961D1EE9DF00FBBD04 /* AppDelegate.m in Sources */,
 				E418F09F1D1EE9DF00FBBD04 /* Lab05.xcdatamodeld in Sources */,
 				E4841CEE1D23676900557819 /* Municipios.m in Sources */,
+				E44F906B1D7A45C400896496 /* Declarations.m in Sources */,
 				E418F0B11D1EF2BE00FBBD04 /* cellHome.m in Sources */,
+				E44F90741D7A7B0000896496 /* cellProducts.m in Sources */,
 				E44F90661D792D4800896496 /* ShoppingCart.m in Sources */,
 				E4841CF21D238E7700557819 /* cellMunipios.m in Sources */,
 				E418F0931D1EE9DF00FBBD04 /* main.m in Sources */,

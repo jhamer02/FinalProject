@@ -20,6 +20,15 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    
+    /*[maProductTitle addObject:@"Hola"];
+
+    [maProductImg addObject:@"Adios"];
+
+    [maProductPrice addObject:@"raka"];*/
+    
+    
     self.lblDestination.text          = self.destinationTitle;
     self.lblDestinationDetails.text    = self.destinationDescription;
     self.imgDestination.image   = [UIImage imageNamed:self.destinationPhoto];
@@ -29,7 +38,7 @@
     
     
     
-    if([self.destinationTitle  isEqual: @"Matías Romero"])
+    /*if([self.destinationTitle  isEqual: @"Matías Romero"])
     {
     // Create a GMSCameraPosition that tells the map to display the
     // coordinate -33.86,151.20 at zoom level 6.
@@ -122,7 +131,7 @@
         marker.title = self.destinationTitle;
         marker.snippet = self.destinationDescription;
         marker.map = mapView_;
-    }
+    }*/
     
 }
 
@@ -140,6 +149,22 @@
 
 - (IBAction)btnCarritoPressed:(id)sender {
     [self performSegueWithIdentifier:@"ShoppingCart1" sender:self];
+}
+
+- (IBAction)btnCartPressed:(id)sender {
+    
+    [maProductTitle addObject:self.destinationTitle];
+     
+    [maProductImg addObject:self.destinationPhoto];
+     
+    [maProductPrice addObject:self.destinationDescription];
+    
+    NSUInteger arrayLength = [maProductTitle count];
+    
+    
+    self.addCart.hidden = true;
+
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

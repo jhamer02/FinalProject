@@ -34,6 +34,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
+    maProductTitle =   [[NSMutableArray alloc] init];
+    maProductImg =   [[NSMutableArray alloc] init];
+    maProductPrice =   [[NSMutableArray alloc] init];
+    
     
     [PayPalMobile initializeWithClientIdsForEnvironments:@{PayPalEnvironmentProduction : @"YOUR_CLIENT_ID_FOR_PRODUCTION",
                                                            PayPalEnvironmentSandbox : @"YOUR_CLIENT_ID_FOR_SANDBOX"}];
