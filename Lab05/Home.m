@@ -35,8 +35,8 @@ DGTAuthenticateButton *authButton;
     authButton = [DGTAuthenticateButton buttonWithAuthenticationCompletion:^(DGTSession *session, NSError *error) {
         if (session.userID) {
             // TODO: associate the session userID with your user model
-            NSString *msg = [NSString stringWithFormat:@"Phone number: %@", session.phoneNumber];
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"You are logged in!"
+            NSString *msg = [NSString stringWithFormat:@"Teléfono: %@", session.phoneNumber];
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Estás logueado!"
                                                             message:msg
                                                            delegate:self
                                                   cancelButtonTitle:@"OK"
@@ -67,9 +67,9 @@ DGTAuthenticateButton *authButton;
     //[self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Oaxaca", @"Jalisco", @"Nuevo León", @"San Luis", @"Quintana Roo",nil] atIndex:0];
     //[self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Matias Romero", @"Lagunas", @"Huajuapan", @"Mérida", @"Monterrey",nil] atIndex:1];
     
-    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Oaxaca", @"Jalisco", @"Nuevo León", @"San Luis", @"Quintana Roo", nil];
+    self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Cervezas", @"Tequila", @"Vino", @"Vodka", @"Cigarros", nil];
     self.destinationPhotos          = [[NSMutableArray alloc] initWithObjects: @"oaxaca.png", @"jalisco.png", @"nuevoleon.png", @"sanluis.png", @"quintanaroo.png", nil];
-    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Oaxaca se destaca por su cultura", @"Jalisco es un estado colonial", @"Destino para negocios", @"DEstino ideal para el ecoturismo", @"Estado con las mejore playas del país", nil];
+    self.destinationDescriptions   = [[NSMutableArray alloc] initWithObjects: @"Cervezas nacionales e internacionales", @"Tequila 100% mexicano", @"Vino internacional", @"Vodka", @"Cigarros internacionales", nil];
     
 
 }

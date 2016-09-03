@@ -36,11 +36,11 @@
 //-------------------------------------------------------------------------------
 - (void)initController {
     self.destinationTitles = [[NSMutableArray alloc] initWithCapacity:5];
-    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Matías Romero", @"Calpulalpam", @"Oaxaca", @"San Lorenzo", @"El Tule",nil] atIndex:0];
-    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Tlajomulco", @"Tlaquepaque", @"Tonalá", @"Guadalajara", @"Arandas",nil] atIndex:1];
-    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Apodaca", @"Monterrey", @"San Pedro", @"Santa Catarina", @"Santiago",nil] atIndex:2];
-    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Real de Catorce", @"Río Verde", @"San Luis", @"Tamasopo", @"Xilitla",nil] atIndex:3];
-    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Cancún", @"Cozumel", @"Isla Mujeres", @"Playa del Carmen", @"Tulum",nil] atIndex:4];
+    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Corona", @"Heineken", @"Guinness", @"Minerva", @"Victoria",nil] atIndex:0];
+    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Don Julio", @"El patrón", @"José Cuervo", @"Hornitos", @"Herradura",nil] atIndex:1];
+    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Rosado", @"Tinto", @"Blanco", @"El Gallo", @"Champagne",nil] atIndex:2];
+    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Absolut", @"Smirnoff", @"bols", @"Gray goose", @"Skyy",nil] atIndex:3];
+    [self.destinationTitles insertObject:[NSMutableArray arrayWithObjects:@"Lucky Strike", @"Kentucky", @"King", @"Marlboro", @"Che",nil] atIndex:4];
     
     self.destinationPhotos = [[NSMutableArray alloc] initWithCapacity:5];
     [self.destinationPhotos insertObject:[NSMutableArray arrayWithObjects:@"matias.jpg", @"oax_calpulalpam.jpg", @"oax_oaxaca.jpg", @"oax_sanlorenzo.jpg", @"oax_tule.jpg",nil] atIndex:0];
@@ -50,11 +50,11 @@
     [self.destinationPhotos insertObject:[NSMutableArray arrayWithObjects:@"qr_cancun.jpg", @"qr_cozumel.jpg", @"qr_islamujeres.jpg", @"qr_playadelcarmen.jpg", @"qr_tulum.jpg",nil] atIndex:4];
     
     self.destinationDescriptions = [[NSMutableArray alloc] initWithCapacity:5];
-    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"Matías Romero, Oaxaca", @"Calpulalpam, Oaxaca", @"Oaxaca, Oaxaca", @"San Lorenzo, Oaxaca", @"El Tule, Oaxaca",nil] atIndex:0];
-    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"Tlajomulco, Jalisco", @"Tlaquepaque, Jalisco", @"Tonalá, Jalisco", @"Guadalajara, Jalisco", @"Arandas, Jalisco",nil] atIndex:1];
-    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"Apodaca, Nuevo León", @"Monterrey, Nuevo León", @"San Pedro, Nuevo León", @"Santa Catarina, Nuevo León", @"Santiago, Nuevo León",nil] atIndex:2];
-    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"Real de Catorce, San Luis Potosí", @"Río Verde, San Luis Potosí", @"San Luis, San Luis Potosí", @"Tamasopo, San Luis Potosí", @"Xilitla, San Luis Potosí",nil] atIndex:3];
-    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"Cancún, Quintana Roo", @"Cozumel, Quintana Roo", @"Isla Mujeres, Quintana Roo", @"Playa del Carmen, Quintana Roo", @"Tulum, Quintana Roo",nil] atIndex:4];
+    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"$80", @"$80", @"$80", @"$80", @"$80",nil] atIndex:0];
+    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"$90", @"$90", @"$90", @"$90", @"$90",nil] atIndex:1];
+    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"$70", @"$70", @"$70", @"$70", @"$70",nil] atIndex:2];
+    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"$70", @"$70", @"$70", @"$70", @"$70",nil] atIndex:3];
+    [self.destinationDescriptions insertObject:[NSMutableArray arrayWithObjects:@"$100", @"$100", @"$100", @"$70", @"$100",nil] atIndex:4];
     
     
     //self.destinationTitles          = [[NSMutableArray alloc] initWithObjects: @"Matias Romero", @"Lagunas", @"huajuapan", @"Mérida", @"Monterrey", nil];

@@ -68,9 +68,9 @@
     PayPalPayment *payment = [[PayPalPayment alloc] init];
     
     // Amount, currency, and description
-    payment.amount = [[NSDecimalNumber alloc] initWithString:@"350.00"];
+    payment.amount = [[NSDecimalNumber alloc] initWithString:@"270.00"];
     payment.currencyCode = @"MXN";
-    payment.shortDescription = @"Despensa";
+    payment.shortDescription = @"Fiesta Pack";
     //payment.shortDescription = self.productTitle;
     
     // Use the intent property to indicate that this is a "sale" payment,
@@ -119,7 +119,7 @@
         
         [mailCont setSubject:@"Pedido confirmado"];
         [mailCont setToRecipients:[NSArray arrayWithObject:@"jhamer02@hotmail.com"]];
-        [mailCont setMessageBody:@"Detalles del pedido" isHTML:NO];
+        [mailCont setMessageBody:@"Detalles del pedido  Lucky Strike, Six Corona, Botella Don Julio" isHTML:NO];
         
         [self presentModalViewController:mailCont animated:YES];
     }
